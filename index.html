@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" no-translate="true">
+ <head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="favicon.ico" favicon.ico/>
+  <meta name="viewport" content="width=device-width, initial-scale-1.0, user-scalable=no"/>
+  <title>Chat Bot</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+ </head>
+ <body id="body" class="body">
+ <header>
+  <div class="headerBot">
+   <div class="imgboxs" id="imgBox" onclick="reactBot()">
+    <img src="boticon.webp" alt="FaBOT" id="img"/>
+   </div>
+   <div class="botInfo">
+     <p class="nameBot">Fabot Chat</p>
+     <p class="botStatus">Online</p>
+   </div>
+    <ion-icon class="headerIcon" id="mail" name="mail-sharp" onclick="openSendEmail()"></ion-icon>
+    <ion-icon class="headerIcon" id="ellips" name="ellipsis-vertical-sharp"></ion-icon>
+  </div>
+ </header>
+  <h1 class="err">MAAF WEBSITE INI TIDAK TERSEDIA UNTUK VERSI DESKTOP</h1>
+  <div class="blurLayer" id="layer"></div>
+   <div class="containerAlert">
+    <div class="myAlert" id="jawaban">
+     <p class="infoAlert">INFO !</p>
+     <p class="textAlert" id="myDescription">Ini adalah contoh text alert. yang saya bikin gatau males pegen beli truck</p>
+     <div class="cta-alert">
+      <button class="btn-alert" id="myButton">Ok</button>
+     </div>
+    </div>
+   </div>
+   <div class="arrow-button">
+     <ion-icon name="arrow-back-sharp" id="arrow-menu" class="arrowMenus"></ion-icon>
+    </div>
+   <div class="menu">
+    <div class="blurLayer" id="blurLayer"></div>
+    <div class="headerMenu">
+      <ion-icon name="qr-code" id="qr" onclick="alert('fitur akan segera hadir')"></ion-icon>
+      <ion-icon name="moon" id="moon"></ion-icon>
+      <ion-icon name="brush" id="brush"></ion-icon>
+    </div>
+     <div class="profileSection">
+      <div class="profileImgBox">
+        <img src="profileicon.webp" class="imgProfile" onclick="perbesarGambar()">
+        <div class="userInfo">
+         <p class="nameUser">Farid Fn</p>
+         <p class="statusUser">Status</p>
+        </div>
+      </div>
+    </div>
+    <div class="contentMenu">
+     <div class="cards">
+      <p id="bio" class="infoTxt"><ion-icon name="person"></ion-icon>&nbsp;About Me</p>
+      
+       <div class="description">
+        <div class="wrapper-text">
+         <p class="descriptionText" id="descriptionSatu">DESKRIPSI 1</p>
+        </div>
+       </div>
+       
+      <div id="text1" class="description">
+        <div class="wrapper-text">
+         <div class="arrow"></div>
+         <p class="descriptionText" id="descriptionDua">DESKRIPSI 2</p>
+        </div>
+       </div>
+       
+      <div id="text2" class="description">
+        <div class="wrapper-text">
+         <div class="arrow"></div>
+         <p class="descriptionText" id="descriptionTiga">DESKRIPSI 3</p>
+        </div>
+       </div>
+       
+      </div>
+       <div class="underline"></div>
+       
+       <p id="bio" class="infoTxt"><ion-icon name="sparkles"></ion-icon>&nbsp;Favorite Thing</p>
+       <div class="container-favorite">
+       <div class="cards-favorite">
+        
+        <div class="favorite-items">
+         <div class="rowFav fav1" id="arrowFavorite"></div>
+         <div class="wrapperFav">
+           <ion-icon name="game-controller"></ion-icon>
+           <p class="favtxt" id="textWhite">Game</p>
+         </div>
+          <div class="descFav row1" id="cards-color">
+           <p id="desc1">FAVORITE 1</p>
+          </div>
+        </div>
+        
+        <div class="favorite-items">
+         <div class="rowFav fav2" id="arrowFavorite"></div>
+         <div class="wrapperFav">
+           <ion-icon name="musical-notes"></ion-icon>
+           <p class="favtxt" id="textWhite">Music</p>
+         </div>
+         <div class="descFav row2" id="cards-color">
+           <p id="desc2">FAVORITE 2</p>
+          </div>
+        </div>
+        
+        <div class="favorite-items">
+         <div class="rowFav fav3" id="arrowFavorite"></div>
+         <div class="wrapperFav">
+           <ion-icon name="code-slash"></ion-icon>
+           <p class="favtxt" id="textWhite">Coding</p>
+         </div>
+         <div class="descFav row2" id="cards-color">
+           <p id="desc3">FAVORITE 3</p>
+          </div>
+        </div>
+        
+        <div class="favorite-items">
+         <div class="rowFav fav4" id="arrowFavorite"></div>
+         <div class="wrapperFav">
+          <ion-icon name="bed"></ion-icon>
+           <p class="favtxt" id="textWhite">Sleep</p>
+         </div>
+         <div class="descFav row4" id="cards-color">
+           <p id="desc4">FAVORITE 4</p>
+          </div>
+        </div>
+        
+       </div>
+      </div>
+     <!--containerFavorite end-->
+    
+    <div class="underline"></div>
+    
+     <p id="bio" class="infoTxt"><ion-icon name="book"></ion-icon>&nbsp;My Collection Website</p>
+    <div class="my-koleksi">
+      <div class="koleksi-box">
+       <div class="content-koleksi koleksi1" id="cards-color">
+        <ion-icon name="tv" class="ico-koleksi"></ion-icon>
+        <p class="title-koleksi" id="textWhite">Contoh Judul website</p>
+        <div class="deskripsi-koleksi" id="myDescription">
+          <p class="descKoleksi">ini adalah contoh deskripsi website yang sudah pernah saya buat.
+          ini adalah contoh deskripsi yang saya buat ngarang 1</p>
+          <p class="descKoleksi">ini adalah contoh deskripsi website yang sudah pernah saya buat. ini adalah contoh deskripsi yang saya buat ngarang</p>
+       </div>
+      </div>
+      </div>
+      <div class="koleksi-box koleksi2">
+       <div class="content-koleksi" id="cards-color">
+        <ion-icon name="tv" class="ico-koleksi"></ion-icon>
+        <p class="title-koleksi" id="textWhite">Contoh Judul website</p>
+        <div class="deskripsi-koleksi" id="myDescription">
+          <p class="descKoleksi">ini adalah contoh deskripsi website yang sudah pernah saya buat.
+          ini adalah contoh deskripsi yang saya buat ngarang 1</p>
+          <p class="descKoleksi2">ini adalah contoh deskripsi website yang sudah pernah saya buat. ini adalah contoh deskripsi yang saya buat ngarang</p>
+       </div>
+      </div>
+      </div>
+      <div class="cta-koleksi">
+       <ion-icon name="chevron-back" class="ico-next" id="jawaban"></ion-icon>
+       <button class="btn-koleksi" id="myButton">Launch !</button>
+       <ion-icon name="chevron-forward" class="ico-next" id="jawaban" onclick="nextKoleksi()"></ion-icon>
+      </div>
+     </div>
+    
+    <div class="underline"></div>
+    
+  </div>
+ </div>
+  <div class="container" id="containerId">
+    <div class="container-linear"></div>
+    <div class="container-love"></div>
+   <div class="wrapper">
+    <div class="containerInput">
+      <input class="input-jawaban" id="jawaban" type="text" placeholder="Silahkan Jawab" class='no-context-menu' onkeyup="checkInput()"/>
+      <div class="barier"></div>
+      <button class="btn-bot" onclick="botStart()" id="myButton" disabled><ion-icon name="send-sharp"></ion-icon></button>
+     </div>
+     <div class="footer">
+       <p>This website is made only for learning in development a website, FaBot-Chat <u>3 July Version.</u></p>
+     </div>
+   </div>
+   <div class="containerMail" id="containerId">
+     <div class="boxEmail" id="cards-color">
+      <div class="emailInfo" id="arrowFavorite">
+       <p class="infoTitle" id="textWhite">Judul email :</p>
+       <p class="judulEmail" id="myDescription" contenteditable="true"></p>
+      </div>
+      <p class="infoTitle" id="textWhite">Tuliskan pesan</p>
+       <div class="wrapperEmail" >
+        <p class="inputEmail" id="myDescription" contenteditable="true"></p>
+        <div class="spanEmail">
+         <p class="footerEmail" id="textWhite"></p>
+         <button class="btn-email" id="myButton" onclick="sendEmail()">Send</button>
+         </div>
+       </div>
+     </div>
+    </div>
+    
+    <div class="containerOpsi">
+     <div class="wrapperOpsi" id="myButton">
+      <div class="boxOpsi">
+      <p class="txtOpsi" onclick="opsi()"><ion-icon name="settings-sharp" id="ico"></ion-icon>&nbsp;Pengaturan</p>
+      </div>
+      <div class="boxOpsi">
+       <p class="txtOpsi" onclick="opsi()"><ion-icon name="share-social" id="ico"></ion-icon>&nbsp;Bagikan</p>
+      </div>
+      <div class="boxOpsi">
+       <p class="txtOpsi" onclick="opsi()"><ion-icon name="help-circle" id="ico"></ion-icon>&nbsp;Info bot</p>
+      </div>
+      <div class="boxOpsi">
+       <p class="txtOpsi" onclick="opsi()"><ion-icon name="trash" id="ico"></ion-icon>&nbsp;Bersihkan chat</p>
+      </div>
+     </div>
+    </div>
+     
+    
+   <div class="date">
+     <p>31 Mei 2023</p>
+   </div>
+   <div class="about">
+     <p><ion-icon name="lock-closed"></ion-icon> pesan dan riwayat chat terenkripsi secara end-to-end. tidak seorang pun di luar chat ini, termasuk developer yang dapat membaca atau melihatnya.</p>
+   </div>
+   <div class="containerChat" id="firstContentPertanyaan">
+    <div class="chatPertanyaans styleQuest" id="firstChatPertanyaan">
+      <div class="arrowQuest"></div>
+       <p id="firstPertanyaan">pertanyaan</p>
+       <p id="timeQuestion"></p>
+      </div>
+    </div>
+   <div class="containerChat" id="contentJawaban">
+      <div class="chatJawaban styleAsk" id="chatJawaban">
+       <div class="arrowAsk"></div>
+         <p id="textJawaban">Jawaban</p>
+         <span>
+          <p id="timeAsk"></p>
+          <ion-icon name="checkmark-done-sharp" id="check2" class="ceklisDua"></ion-icon>
+         </span>
+       </div>
+    </div>
+   <div class="containerChat" id="contentPertanyaan">
+     <div id="chatPertanyaan" class="chatPertanyaans styleQuest">
+      <div class="arrowQuest"></div>
+       <p id="textPertanyaan">pertanyaan kedua</p>
+       <p id="timeQuestion"></p>
+      </div>
+    </div>
+  </div>
+  <script src="style.js"></script>
+  <script src="swapBg.js"></script>
+  <script src="chatbot.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("yZzbJwytB-aSDSuZw");
+     })();
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ </body>
+</html>
